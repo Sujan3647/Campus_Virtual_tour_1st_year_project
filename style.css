@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(gallery/banner.png);
+    background-position: center;
+    background-size: cover;
+    filter: blur(3px);
+    z-index:-1;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 230px;
+    position: absolute;
+    top: 25%;
+    left: 42.90%;
+    filter: saturate(2);
+}
+
+.nav-links {
+    position: absolute;
+    top: 2.50%;
+    left: 10%;
+    right: 0%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links ul li {
+    margin: 0 90px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2.5px;
+    background: #FFC436;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 50.3%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+    margin: 120px 0 20px;
+}
+
+.text-box p {
+    margin: 10px 0 100px;
+    font-size: 17px;
+    color: white;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid white;
+    background: rgba(255, 196, 54, 0.4);
+    transition: 1s;
+}
+
+/*----- Course -----*/
+
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+p1{
+    color: white;
+}
+
+p{
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: blur(1000px);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px;
+    color:white;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: white;
+}
+.course-col:hover{
+    box-shadow: 0 0 30px 8px rgba(255 255 255);
+}
+
+/*----- campus -----*/
+
+.campus{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 20px;
+    /*increased border-radius for round corners*/
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img {
+    width: 100%;
+    /*center the image*/
+    border-radius: 20px;
+    /*round corners for the image */
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    /*set the layer width to 100% */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}  
+.layer:hover{
+    background: rgba(255,196,54,0.4);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+    bottom: 0;
+    left: 0%;
+    right: 0%;
+    transform: translateX();
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.campus-col img {
+    width: 100%;
+    /*center the image*/
+    border-radius: 20px;
+    /*round corners for the image */
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    /*set the layer width to 100% */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}  
+.layer:hover{
+    background: rgba(255,196,54,0.4);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 20px;
+    bottom: 0;
+    left: 0%;
+    right: 0%;
+    transform: translateX();
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*----- facilities -----*/
+
+.facilities{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+    filter: saturate(1.75);
+}
+.facilities-col p{
+    padding: 0;
+}
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/*----- call to action -----*/
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(gallery/pic.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/*-----FOOTER-----*/
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+}
+
+.footer h4{   
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+p2{
+    color: white;
+}
+
+/*----- ABOUT US PAGE -----*/
+
+.sub-header{
+    height: 27vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.sub-header h1{
+    margin-top: 40px;
+}
+
+.about-us{
+    width: 90%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 10px 3px;
+}
+.about-col img{
+    width: 110%;
+    display: block;
+    border-radius: 20px;
+}
+
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+
+.red-btn{
+    border: 2px solid #fff;
+    background: transparent;
+    filter: blur (3px);
+    color: white;
+    font-size: 13px;
+}
+
+.red-btn:hover{
+    color: white;
+}
+
+/*----- location -----*/
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location-col img{
+    width:100%; 
+    display: block;
+    border-radius: 20px;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa{
+    font-size: 28px;
+    color: #FFC436; 
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: 400;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+
+
